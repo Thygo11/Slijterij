@@ -12,11 +12,11 @@ function App() {
   const [priceRange, setPriceRange] = useState([0, 50]);
   const [selectedDrink, setSelectedDrink] = useState(null);
 
-  // Get unique values for filters
+
   const drinkTypes = [...new Set(drinkData.map(drink => drink.type))];
   const countries = [...new Set(drinkData.map(drink => drink.country))];
 
-  // Filter drinks based on all criteria
+  
   const filteredDrinks = drinkData.filter(drink => {
     const matchesSearch = drink.name.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesType = !selectedType || drink.type === selectedType;
@@ -26,7 +26,7 @@ function App() {
     return matchesSearch && matchesType && matchesCountry && matchesPrice;
   });
 
-  // Check if any filter is active
+  
   const hasActiveFilters = searchTerm || selectedType || selectedCountry || priceRange[0] > 0 || priceRange[1] < 50;
 
   return (

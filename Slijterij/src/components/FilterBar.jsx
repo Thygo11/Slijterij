@@ -16,7 +16,7 @@ function FilterBar({ searchTerm, onSearchChange, drinkTypes, selectedType, onTyp
           <span className="search-icon">🔍</span>
         </div>
 
-        {/* Filters Row */}
+       
         <div className="filters-row">
           <div className="filter-group">
             <label>Type drank</label>
@@ -67,7 +67,7 @@ function FilterBar({ searchTerm, onSearchChange, drinkTypes, selectedType, onTyp
           </div>
         </div>
 
-        {/* Active Filters */}
+      
         {hasActiveFilters && (
           <div className="active-filters">
             <span className="filters-label">Actieve filters:</span>
