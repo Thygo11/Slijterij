@@ -68,7 +68,7 @@ function FilterBar({ searchTerm, onSearchChange, drinkTypes, selectedType, onTyp
         </div>
 
        
-        {hasActiveFilters && (
+        {hasActiveFilters  && (
           <div className="active-filters">
             <span className="filters-label">Actieve filters:</span>
             {selectedType && (

@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import DrinkCard from './components/DrinkCard';
 import FilterBar from './components/FilterBar';
 import DrinkDetail from './components/DrinkDetail';
 import drinkData from './data/data';
 import './App.css';
+import DrinkCard from './components/DrinkCard';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
