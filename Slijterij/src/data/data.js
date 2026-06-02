@@ -400,5 +400,4 @@ const drinkData = [
     "image": "https://images.unsplash.com/photo-1651980909099-ddb028d72855?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
   }
 ];
-
 export default drinkData;
