@@ -89,6 +89,7 @@ function FilterBar({ searchTerm, onSearchChange, drinkTypes, selectedType, onTyp
                 <button onClick={() => onPriceChange([0, 50])} className="badge-close">✕</button>
               </span>
             )}
+              
             {searchTerm && (
               <span className="filter-badge">
                 Zoek: {searchTerm}
